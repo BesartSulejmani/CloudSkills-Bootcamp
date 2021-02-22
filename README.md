@@ -68,3 +68,45 @@ Serverless computing has ramped up significantly lately, for good reason. You ca
 - Project 5: Security for serverless apps
 - Project 6: Monitoring Serverless Azure Apps
 - Project7: Monitor Serverless AWS Apps
+
+## Week 7: Security in Azure and AWS
+
+Cyber security is quite possibly one of the most over-looked portions of the cloud. It’s easy to create an Azure Virtual Machine, and just as easy to accidentally give that VM that’s running Active Directory a public IP address that’s open to the world. In week 7, we’re going to dive into some key security topics in the cloud and how you can start securing your environment.
+
+- Project 1: Securing code
+- Project 2: Implementing continuous security
+- Project 3: Security authentication in code
+- Project 4: Creatingh IAM roles, users, and groups
+- Project 5: Creating RBAC rules and Azure Policies
+
+## Week 8: Containerization and Kubernetes
+
+Containerized with Docker and Kubernetes is one of the most used services in the Azure and AWS ecosystem. Every organization wants to be able to go faster in an efficient, secure, and scalable manner, which is what Kubernetes gives you. This week we’ll talk about how to get Kubernetes running in Azure and AWS to ensure you’re scaling your skills at the right speed.
+
+- Project 1: Creating a Minikube environment
+- Project 2: Creating an AKS Cluster
+- Project 3: Creating an EKS cluster
+- Project 4: Using Azure ACI
+- Project 5: Using AWS Fargate
+
+## Week 9: Monitoring and Logging
+
+Monitoring an application and ensuring you store logs is the difference between an application running smoothly and a 2:00 AM panic call because the application crashed. A proper monitoring and logging setup is key for any DevOps pro. This week it’s all about putting these use-cases to practice and seeing how Azure and AWS can help in your monitor and logging journey.
+
+- Project 1: Monitoring Azure IaaS
+- Project 2: Monitoring serverless platforms
+- Project 3: Azure Monitor and Alerting
+- Project 4: Azure logging and metrics
+- Project 5: AWS CloudWatch
+- Project 6: Container Monitoring with Prometheus
+
+## Week 10: Where To Go From Here (Career Prep)
+
+Now that we’ve taught you the skills you need to level up your success in the DevOps and development space, it’s time to talk about how you can utilize those skills to get a job or a promotion. We’re going to dive into resume updates, LinkedIn, branding yourself, and ensuring everyone that comes across your pages know you’re a DevOps pro.
+
+- Revamping a resume
+- Where to apply
+- How to apply
+- What to showcase (GitHub profile, LinkedIn, etc.)
+- Coding interviews for Cloud Engineers
+- Case Study: How to get Thousands of Follows on Twitter and LinkedIn
