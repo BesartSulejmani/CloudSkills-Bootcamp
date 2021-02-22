@@ -22,9 +22,9 @@ Week 1 is the official kick-off of the Cloud-Native DevOps bootcamp. In week 1, 
 
 When you’re an infrastructure pro breaking into the development and coding space, it can be intimidating. There’s a bunch of new words, definitions, and acronyms that you may not have heard before. Week 2 is to show you that it can be more simple then you think! Take the PowerShell or Python scripts you’ve written and sprinkle some DevOps best practices on them with this weeks Scripting Like A Developer lecture and labs.
 
-Project 1: Setting up a dev environment from start to finish
-Project 2: Reusable and clean Python code
-Project 3: Reusable and clean PowerShell code
-Project 4: Linting in PowerShell and Python
-Project 5: Testing in PowerShell and Python
-Project 6: Documenting Code
+- Project 1: Setting up a dev environment from start to finish
+- Project 2: Reusable and clean Python code
+- Project 3: Reusable and clean PowerShell code
+- Project 4: Linting in PowerShell and Python
+- Project 5: Testing in PowerShell and Python
+- Project 6: Documenting Code
