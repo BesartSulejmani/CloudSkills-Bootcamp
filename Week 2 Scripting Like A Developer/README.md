@@ -1,0 +1,123 @@
+# Week 2 Scripting Like A Developer
+
+The code found in this repository is to help you learn how to script like a Developer.
+
+## Prepare Your DEV Environment
+
+Things needed to install for these labs:
+
+### Visual Studio Code
+| Name              | Installation Method    | Install Command                                    |
+| ------------------| -----------------------| ---------------------------------------------------|
+| VS Code           | Download & Install     | [Download here](https://code.visualstudio.com/)    |
+| AWS Toolkit       | VS Code extension      | Install in VS Code                                 |
+| Python extension  | VS Code extension      | Install in VS Code                                 |
+
+
+### AWS & Python
+
+| Name    | Installation Method    | Install Command                                    |
+| ------- | ---------------------- | ---------------------------------------------------|
+| AWS-CLI | Download & Install     | [Download here](https://aws.amazon.com/cli/)       |
+| Python3 | Download & Install     | [Downlaod here](https://www.python.org/downloads/) |
+| Boto3   | PIP (Python Installer) | `pip install boto3`                                |
+| Pylint  | PIP (Python Installer) | `pip install pylint`                               |
+
+### Azure & PowerShell
+
+| Name                     | Installation Method           | Install Command                                                |
+| ------------------------ | ----------------------------- | -------------------------------------------------------------- |
+| PS-Module Az             | PowerShell (Module Installer) | `Install-Module -Name Az -AllowClobber -Scope AllUsers`        |
+| PSScriptAnalyzer         | PowerShell (Module Installer) | `Install-Module PSScriptAnalyzer -Force -Repository PSGallery` |
+
+## PowerShell Code
+
+The PowerShell code found in `Week 2 Scripting Like A Developer` is for anyone that wants to create a Resource Group in Azure.
+
+## How To Use The Powershell Code
+
+The `New-ResourceGroup` function is found under the `Powershell` directory and can be used as a reusable function. A user has the ability to pass in parameters at runtime to ensure they can re-use the script at any point in any environment.
+
+## Python Code
+
+The Python code found in `Week 2 Scripting Like A Developer` is for anyone that wants to create an S3 bucket in AWS.
+
+## How To Use The Python Code
+
+The `s3bucket.py` script is designed to be re-used at any point for any environment. There are no hard-coded values.
+
+## Examples
+
+```Pwsh
+function New-ResourceGroup {
+    [cmdletbinding(SupportsShouldProcess)]
+
+    param (
+        [parameter(Mandatory)]
+        [string]$rgName,
+
+        [parameter(Mandatory)]
+        [string]$location
+    )
+
+    $params = @{
+        'Name'      = $rgName
+        'Location'  = $location
+    }
+
+    if ($PSCmdlet.ShouldProcess('location')) {
+        New-AzResourceGroup @params
+    }
+}
+
+New-ResourceGroup -rgname 'cloudskillsbootcamp' -location 'westeurope'
+```
+
+```Python
+import sys
+import boto3
+
+try:
+    def main():
+        create_s3bucket(bucket_name)
+
+except Exception as e:
+    print(e)
+
+
+def create_s3bucket(bucket_name):
+    s3_bucket = boto3.client(
+        's3',
+        region_name='eu-west-1'
+    )
+
+    # Had to add location and region because of set default region
+    # https://boto3.amazonaws.com/v1/documentation/api/latest/guide/s3-example-creating-buckets.html
+    location = {'LocationConstraint': 'eu-west-1'}
+
+    bucket = s3_bucket.create_bucket(
+        Bucket=bucket_name,
+        ACL='private',
+        CreateBucketConfiguration=location,
+    )
+
+    print(bucket)
+
+
+bucket_name = sys.argv[1]
+
+if __name__ == '__main__':
+    main()
+
+python s3bucket.py 'cloudskillss3bucket'
+```
+
+## Testing
+
+Both the PowerShell and Python code have unit tests available to ensure that the desired outcomes, including values and types, are accurate.
+
+The tests can be found in the `PowerShell` and `Python` directories.
+
+## Contributors
+
+1. Besart Sulejmani
