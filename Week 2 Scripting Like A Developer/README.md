@@ -19,7 +19,7 @@ Things needed to install for these labs:
 | Name    | Installation Method    | Install Command                                    |
 | ------- | ---------------------- | ---------------------------------------------------|
 | AWS-CLI | Download & Install     | [Download here](https://aws.amazon.com/cli/)       |
-| Python3 | Download & Install     | [Downlaod here](https://www.python.org/downloads/) |
+| Python3 | Download & Install     | [Download here](https://www.python.org/downloads/) |
 | Boto3   | PIP (Python Installer) | `pip install boto3`                                |
 | Pylint  | PIP (Python Installer) | `pip install pylint`                               |
 
