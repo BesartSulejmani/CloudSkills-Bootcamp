@@ -28,3 +28,43 @@ When you’re an infrastructure pro breaking into the development and coding spa
 - Project 4: Linting in PowerShell and Python
 - Project 5: Testing in PowerShell and Python
 - Project 6: Documenting Code
+
+## Week 3: Infrastructure as Code
+
+We’re always hearing about infrastructure-as-code, which is a way to define the services you create today using code. This is a great entry-point into thinking like a developer and truly automating the work that you do to not only save yourself time, but to make the outcome of your work more efficient and shareable to your peers.
+
+- Project 1: Building an ARM template for Virtual Machine deployment in Azure
+- Project 2: Building a Terraform module to create a virtual network in AWS
+- Project 3: Testing infrastructure-as-code
+- Project 4: Intro to Azure Bicep
+
+## Week 4: GitHub and Source Control
+
+Writing code and thinking like a developer is important for DevOps, but having a place to save the code you write is just as important. With platforms like GitHub and practices like source control, you can rip that code out of your documents folder and store it in a safe, secure, and shareable location so you and your team can collaborate together.
+
+- Project 1: VS Code with Git and Github
+- Project 2: Working through push conflicts
+- Project 3: Contributing to an open source project
+
+## Week 5: Continuous Integration, Continuous Deploy, and Continuous Delivery
+
+Continuous Integration and Continuous Deployment/Delivery is the cutting-edge way to build and ship code. You can do anything from deploy a JavaScript application to run Terraform code to build your cloud services and infrastructure. This week is all about using CI/CD in both Azure and AWS using key CI/CD platforms.
+
+- Project 1: Deploying a C# web app via Azure DevOps
+- Project 1: Building without deploying in GitHub Actions
+- Project 3: Deploying Terraform via GitHub Actions
+- Project 4: Setting up Continuous Monitoring
+- Project 5: Artifacts and packages in CICD
+- Project 6: Creating AWS CodeDeploy
+
+## Week 6: Serverless in Azure and AWS
+
+Serverless computing has ramped up significantly lately, for good reason. You can take an application running on IIS or Nginx and instead of having to create infrastructure to run the app, you can simply run it in a service. No more having to worry about operating system updates or management. You only have to focus on the code that’s being deployed. This week we’ll dive into what serverless can do for you.
+
+- Project 1: Build an Azure Function app
+- Project 2: Build an Azure Web App
+- Project 3: Deploy an Azure Web App via CICD in GitHub Actions
+- Project 4: Create a Lambda Funcion
+- Project 5: Security for serverless apps
+- Project 6: Monitoring Serverless Azure Apps
+- Project7: Monitor Serverless AWS Apps
