@@ -5,6 +5,13 @@
 *.tfstate
 *.tfstate.*
 
+# terraform lock files
+.terraform.lock.hcl
+
+# go module files
+go.mod
+go.sum
+
 # Crash log files
 crash.log
 
