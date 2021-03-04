@@ -42,12 +42,14 @@ The ARM template found in `Week 3 Infrastructure as Code` is for anyone that wan
 To deploy the ARM template and create all the resources defined in it, run the following commands:
 
 1. Login with Azure CLI
-
-```az login```
+```
+az login
+```
 
 2. Deploy the template (Existing Resource-Group required)
-
-```az deployment group create --resource-group cloudskillsbootcamp --template-file .\template.json```
+```
+az deployment group create --resource-group cloudskillsbootcamp --template-file .\template.json
+```
 
 ## Terraform code
 
@@ -56,36 +58,43 @@ The Terraform code found in `Week 3 Infrastructure as Code` is for anyone that w
 ## How to use the Terraform code
 
 1. Configure AWS (IAM access key and secret needed)
-
-```aws configure```
+```
+aws configure
+```
 
 2. Initialize the working directory with the Terraform configuration files "main.tf" under the Terraform directory.
-
-```Terraform init```
+```
+Terraform init
+```
 
 3. Deploy the Terraform code
-
-```Terraform deploy```
+```
+Terraform deploy
+```
 
 4. (Optional) Destroy configuration in AWS
-
-```Terraform destroy```
+```
+Terraform destroy
+```
 
 ## Testing
 
 Terraform has an included test available under the Testing directory. Commands needed to be run before you can use the test: (Either in the "terraform-aws-webserver" root-folder or the "test" sub-folder)
 
 1. Initialize go modules
-
-```go mod init terraform-aws-webserver```
+```
+go mod init terraform-aws-webserver
+```
 
 2. Download module dependencies
-
-```go mod tidy```
+```
+go mod tidy
+```
 
 3. Run test of the Terraform module
-
-```go test -v .\webserver_test.go```
+```
+go test -v .\webserver_test.g
+```
 
 ## Azure Bicep code
 
@@ -96,16 +105,19 @@ The Azure Bicep code found in `Week 3 Infrastructure as Code` is for anyone that
 To deploy the Bicep template and create the storage account defined in it, run the following commands:
 
 1. Login with Azure CLI
-
-```az login```
+```
+az login
+```
 
 2. Create ARM template based on the Biceps template
-
-```bicep build .\main.bicep```
+```
+bicep build .\main.bicep
+```
 
 3. Deploy the ARM template generated out of the Biceps template (Existing Resource-Group required)
-
-```az deployment group create --recourse-group cloudskillsbootcamp --template-file .\main.json -p name=sa354-cloudskillsbootcamp```
+```
+az deployment group create --recourse-group cloudskillsbootcamp --template-file .\main.json -p name=sa354-cloudskillsbootcamp
+```
 
 ## Contributors
 
