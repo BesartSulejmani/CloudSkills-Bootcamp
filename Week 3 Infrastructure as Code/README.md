@@ -69,7 +69,7 @@ Terraform init
 
 3. Deploy the Terraform code
 ```
-Terraform deploy
+Terraform apply
 ```
 
 4. (Optional) Destroy configuration in AWS
