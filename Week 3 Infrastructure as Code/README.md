@@ -116,7 +116,7 @@ bicep build .\main.bicep
 
 3. Deploy the ARM template generated out of the Biceps template (Existing Resource-Group required)
 ```
-az deployment group create --recourse-group cloudskillsbootcamp --template-file .\main.json -p name=sa354-cloudskillsbootcamp
+az deployment group create --resource-group cloudskillsbootcamp --template-file .\main.json -p name=sa354-cloudskillsbootcamp
 ```
 
 ## Contributors
