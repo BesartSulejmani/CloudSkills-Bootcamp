@@ -7,3 +7,5 @@ Become a member of the community and get access to the course 'https://cloudskil
 ## Course Outline
 
 NOTE: All sessions are recorded and available for replay. You can take your time to work through the bootcamp.
+
+Test
